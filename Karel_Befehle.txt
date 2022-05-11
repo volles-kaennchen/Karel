@@ -1,0 +1,30 @@
+F1	moveForward();	Karel moves one square forward in the direction he currently faces.
+			Fails if a wall blocks the way.
+F2	turnLeft();	Karel turns 90° to the left.
+F3	turnAround();	Karel turns 180° around.
+F4	turnRight();	Karel turns 90° to the right.
+F5	pickBeeper();	Karel picks a beeper from the square he currently stands on.
+			Fails if there is no beeper.
+F6	dropBeeper();	Karel drops a beeper onto the square he currently stands on.
+			Fails if there already is a beeper.
+
+if (onBeeper())
+{
+    pickBeeper();
+}
+
+
+F7	onBeeper()	Karel checks whether a beeper is on the square he currently stands on.
+F8	beeperAhead()	Karel checks whether a beeper is on the square immediately in front of him.
+F9	leftIsClear()	Karel checks whether no wall is between him and the square to his left.
+F10	frontIsClear()	Karel checks whether no wall is between him and the square in front of him.
+F11	rightIsClear()	Karel checks whether no wall is between him and the square to his right.
+
+if (leftIsClear())
+{
+    turnLeft();
+}
+else if (rightIsClear())
+{
+    turnRight();
+}
