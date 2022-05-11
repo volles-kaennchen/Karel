@@ -1,2 +1,2 @@
-# Karel
-KarelTheRobot
+# Install KarelTheRobot
+
